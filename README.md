@@ -1,114 +1,62 @@
+Toy Problem Challenges
+Challenge 1: Student Grade Generator
 
-Week 1 Toy problems Prerequisites
+This program calculates the grade based on the input student marks. The grade ranges are as follows:
 
-Prerequisites: 
+    A: > 79
+    B: 60 to 79
+    C: 50 to 59
+    D: 40 to 49
+    E: less than 40
 
-1. Create a repository on your GitHub account. 
+Challenge 2: Speed Detector
 
-NB: One folder, with 3-4 files for each solution. Please note that a single file should only hold one solution.
+This program takes the speed of a car as input and checks if it's within the speed limit. If it's less than 70, it prints "Ok." If the speed is above 70, it calculates demerit points and prints the total points. If the driver accumulates more than 12 points, the program prints "License suspended."
+Challenge 3: Net Salary Calculator
 
-2. Use JavaScript to wire down the solution.
+The program is meant to calculate an individual's net salary, that is based on their basic salary and benefits. It calculates payee (tax), NHIF deductions, NSSF deductions, gross salary, and net salary.
+Need to work on
+1. Net Salary Calculator
 
-3. Push the solution to the above repository once done.
+A) The'readline' module is imported, providing a user interface for reading input from the command line.
 
-4. Submit the repository link for grading.
+b) It develops a readline interface (rl) that enables command-line communication between the application and the user.
 
-5. Ensure your repository has a well written README.
+    This is demonstrated by the fact that it sets the streams 'process.stdin' for input and 'process.stdout' for output. This implies that it will display output to the console and read user input from the console.
 
-NOTE: You are required to complete ALL the challenges.
+b) The function 'calculateNetSalary' is defined in the code. c) The 'rl.question' method is used inside 'calculateNetSalary' to prompt the user to enter the employee's pay. A callback function is offered in addition to the question being shown as a prompt.
+2. speed_Detector
 
- 
+The'readline' module, which offers an interface for reading input from the command line, will be imported first.
 
-Challenge 1: Student Grade Generator (Toy Problem)
+b) It develops a readline interface (rl) that enables command-line communication between the application and the user. It establishes 'process.stdin' as the input stream and 'process.stdout' as the output stream, allowing the program to read user input from the console and show output to the console.
+3. student_Grade_Generator
 
-Write a function that prompts the user to input student marks. The input should be between 0 and 100. The output should correspond the correct grade, as shown below: 
+The'readline' module, which offers an interface for reading input from the command line, is imported first.
 
-        A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
+It develops a readline interface (rl) that enables command-line communication between the program and the user. It establishes 'process.stdin' as the input stream and 'process.stdout' as the output stream, allowing the program to read user input from the console and show output to the console.
 
- 
+'calculateGrade' is a function that is defined in the code.
 
-Challenge 2: Speed Detector (Toy Problem)
+The user is prompted to enter the student's grades using the function 'calculateGrade', which uses 'rl.question' and specifies that the acceptable range is between 0 and 100. The callback function receives the user's input as the 'input' parameter.
 
-Write a program that takes the speed of a car as input e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
+It transforms the user's input into a floating-point number inside the callback method for "rl.question."
+Prerequistes
 
-   > For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
+    Any Editor (Best to use will be vs code)
+    Any web browser with the latest ES version
+    Quokka(OPtional)
+    Use code runner
 
- 
+Languages and technology used
 
-Challenge 3: Net Salary Calculator (Toy Problem)
+    JavaScript
+    Install the readline node module
+    install node
 
-Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
+Steps to run the project
 
-NB: Use KRA, NHIF, and NSSF values provided in the link below.
-
-- https://www.aren.co.ke/payroll/taxrates.htm
-
-Links to an external site.
-
-Links to an external site.-  Links to an external site.
-
-Links to an external site.
-
-- www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
-
-Links to an external site.
-
-
-Extra Practice Questions:
-
-(BubbleSort)
-1. Write a function that takes an array of numbers as input. It should output an array of those same numbers sorted from lowest to highest.
-
-sample input = [5,6,1,3,4,2]
-Expected output = [1,2,3,4,5,6]
-
-Research Areas: 
-1. Loops 
-2. Array Methods 
-
-
-(Loops)
-2. Staircase problem 
-Create a function that takes an integer and console logs a step shaped stair with the integer levels using the # character 
-
-e.g steps(2)  #
-              ##
-
-    steps(3)  #
-              ##
-              ###
-
-Research Areas 
-1. Array methods 
-2. Nested Loops
-3. Conditional statements
-
-
-(Objects)
-3. Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes.
-Volume of a cylinder : V = πr2h where r is the radius and h is the height of the cylinder.
-
-Research Areas 
-1. Objects. 
-2. Object constructor.
-3. constructor templates.
-
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-
+    Clone the repository
+    Extract all the files
+    Open the file in vsCode
+    run the files in the browser or use the quokkka extennsion in vscode both work the same way
